@@ -1,49 +1,72 @@
 body {
-  display: flex;
-  font: 16px sans-serif;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  grid-gap: 0.5rem;
+  grid-template-areas: "sidebar" "content";
   line-height: 1.5rem;
   margin: 0;
+  padding: 0r;
+}
+
+@media (min-width: 500px) {
+  body {
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      "sidebar content"
+  }
+
+  nav.sidebar {
+    min-height: 100vh;
+  }
+}
+
+nav.sidebar, main {
   padding: 0.5rem;
 }
 
-nav, main {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
+nav.sidebar {
+  background-color: #000033;
+  grid-area: sidebar;
+  color: white;
 }
 
-nav {
-  background-color: #eee;
-  min-height: 100vh;
-  width: 200px;
-}
-
-  nav h3 {
+  nav.sidebar h1, nav h3 {
     margin: 0;
     padding: 0;
   }
 
-  nav ol {
+  nav.sidebar h1 {
+    font-size: 100%;
+  }
+
+  nav.sidebar ol {
     list-style-type: none;
-    margin: 0.5rem 0 0 0;
+    margin: 0 0 1.5rem 0;
     padding: 0;
   }
 
-  nav li {
+  nav.sidebar li {
     margin: 0;
     padding: 0;
   }
 
 main {
-
+  grid-area: content;
 }
 
 aside {
   background-color: yellow;
   border: 1px solid #ccc;
   padding: 0.5rem;
+}
+
+a {
+  color: blue;
+}
+
+nav a:visited {
+  color: blue;
+  text-decoration-skip-ink: auto;
 }
 
 .highlight {
@@ -56,3 +79,14 @@ aside {
 .highlight pre {
   margin: 0;
 }
+
+nav.toc {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+  nav.toc ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+  }
