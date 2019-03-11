@@ -27,7 +27,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-toc
   - premonition
 
 # Exclude from processing.
@@ -45,11 +44,6 @@ plugins:
 collections:
   chapters:
     output: true
-
-toc:
-  min_level: 2
-  max_level: 2
-
 
 premonition:
   types:
