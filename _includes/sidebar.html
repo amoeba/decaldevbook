@@ -1,0 +1,8 @@
+<nav>
+  Chapters
+  <ol>
+      {%- for chapter in site.chapters -%}
+      <li><a href="{{ chapter.url | relative_url }}">{{ chapter.title | escape }}</a></li>
+      {%- endfor -%}
+    </ol>
+</nav>

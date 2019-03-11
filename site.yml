@@ -1,0 +1,32 @@
+toc:
+  lessons:
+  - intro
+  - basics
+  - callbacks
+  - oop
+  - htmlcss
+  - pages
+  - dynamic
+  - vis
+  - promises
+  - interactive
+  - dataman
+  - server
+  - testing
+  - capstone
+  - finale
+  bib:
+  - bib
+  extras:
+  - license
+  - conduct
+  - citation
+  - contributing
+  - gloss
+  - keypoints
+  - collab
+  - legacy
+  - logging
+  - extensible
+  - db
+  - deploy
