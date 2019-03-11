@@ -49,3 +49,10 @@ collections:
 toc:
   min_level: 2
   max_level: 2
+
+
+premonition:
+  types:
+    aside:
+      id: aside
+      template: '<aside class="{{ type }}"><p>{{ title }}</p>{{ content }}</aside>'

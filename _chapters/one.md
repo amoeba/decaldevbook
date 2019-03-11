@@ -13,6 +13,9 @@ Just chapter one hey
 
 hi
 
+> aside "On the topic of X"
+> Blatherings about X
+
 ## another
 
 hihi
