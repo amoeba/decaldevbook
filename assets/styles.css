@@ -45,3 +45,14 @@ aside {
   border: 1px solid #ccc;
   padding: 0.5rem;
 }
+
+.highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.highlight pre {
+  margin: 0;
+}
