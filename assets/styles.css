@@ -40,12 +40,13 @@ nav.sidebar {
     padding: 0;
   }
 
-  nav.sidebar h2 {
-    color: #CC9900;
+  nav.sidebar h1 {
     font-size: 100%;
+    line-height: 40px;
   }
 
-  nav.sidebar h1 {
+  nav.sidebar h2 {
+    color: #CC9900;
     font-size: 100%;
   }
 
