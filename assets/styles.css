@@ -9,7 +9,7 @@ body {
   padding: 0r;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 50rem) {
   body {
     grid-template-columns: 14rem auto;
     grid-template-areas:
