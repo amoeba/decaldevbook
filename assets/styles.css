@@ -11,7 +11,7 @@ body {
 
 @media (min-width: 500px) {
   body {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-areas:
       "sidebar content"
   }
@@ -21,19 +21,28 @@ body {
   }
 }
 
-nav.sidebar, main {
+nav.sidebar, 
+main {
   padding: 0.5rem;
 }
 
+/* Sidebar */
 nav.sidebar {
   background-color: #000033;
   grid-area: sidebar;
   color: white;
 }
 
-  nav.sidebar h1, nav h3 {
+  nav.sidebar h1, 
+  nav.sidebar h2,
+  nav.sidebar h3 {
     margin: 0;
     padding: 0;
+  }
+
+  nav.sidebar h2 {
+    color: #CC9900;
+    font-size: 100%;
   }
 
   nav.sidebar h1 {
@@ -41,8 +50,8 @@ nav.sidebar {
   }
 
   nav.sidebar ol {
-    list-style-type: none;
-    margin: 0 0 1.5rem 0;
+    list-style-type: upper-roman;
+    margin: 0 0 1.5rem 1.5rem;
     padding: 0;
   }
 
@@ -51,11 +60,23 @@ nav.sidebar {
     padding: 0;
   }
 
+  nav.sidebar a,
+  nav.sidebar a:visited {
+    color: #FFFFCC;
+  }
+
+  div#title {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-gap: 0.5rem;
+  }
+
+/* Main area */
 main {
   grid-area: content;
 }
 
-aside {
+aside, nav.toc {
   background-color: rgb(230, 230, 230, 0.5);
   border: 1px solid rgb(3, 102, 214);
   border-radius: 3px;
@@ -64,11 +85,11 @@ aside {
 
 a {
   color: blue;
+  text-decoration-skip-ink: auto;
 }
 
-nav a:visited {
+a:visited {
   color: blue;
-  text-decoration-skip-ink: auto;
 }
 
 .highlight {
@@ -81,14 +102,12 @@ nav a:visited {
 .highlight pre {
   margin: 0;
 }
-
-nav.toc {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-}
-
-  nav.toc ul {
-    margin: 0.5rem 0 0 1.5rem;
-    padding: 0;
+  /* TOC */
+  nav.toc {
+    display: inline-block;
   }
+
+    nav.toc ul {
+      margin: 0.5rem 0 0 1.5rem;
+      padding: 0;
+    }
