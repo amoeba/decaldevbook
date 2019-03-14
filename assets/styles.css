@@ -93,6 +93,11 @@ nav.toc {
   padding: 0.5rem;
 }
 
+aside .title {
+  display: block;
+  font-weight: bold;
+}
+
 a {
   color: blue;
   text-decoration-skip-ink: auto;

@@ -48,4 +48,4 @@ premonition:
   types:
     aside:
       id: aside
-      template: '<aside class="{{ type }}"><p>{{ title }}</p>{{ content }}</aside>'
+      template: '<aside class="{{ type }}"><span class="title">{{ title }}</span>{{ content }}</aside>'
