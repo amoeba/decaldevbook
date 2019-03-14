@@ -19,6 +19,10 @@ body {
   nav.sidebar {
     min-height: 100vh;
   }
+
+  nav.toc {
+    display: inline-block;
+  }
 }
 
 nav.sidebar, 
@@ -104,11 +108,7 @@ a:visited {
   margin: 0;
 }
   /* TOC */
-  nav.toc {
-    display: inline-block;
+  nav.toc ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
   }
-
-    nav.toc ul {
-      margin: 0.5rem 0 0 1.5rem;
-      padding: 0;
-    }
