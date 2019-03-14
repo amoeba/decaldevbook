@@ -1,11 +1,11 @@
 ---
 layout: chapter
-title: Hello World
+title: Hello Auberean
 permalink: "hello_world.html"
 toc: true
 ---
 
-# Hello World Plugin
+# Hello Auberean Plugin
 
 TODO
 
