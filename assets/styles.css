@@ -11,7 +11,7 @@ body {
 
 @media (min-width: 50rem) {
   body {
-    grid-template-columns: 12rem 40rem;
+    grid-template-columns: 12rem auto;
     grid-template-areas:
       "sidebar content"
   }
