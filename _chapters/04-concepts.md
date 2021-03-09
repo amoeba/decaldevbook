@@ -13,6 +13,11 @@ TODO
 
 TODO
 
+- Dispose of objects you create
+  - Except WorldObjects (those are cached by Decal internally). You can but don't need to.
+  - If you create a VendorObject during the VendorCreate event, you must dispose it
+- Unbind events you bind
+
 ## Threading
 
 TODO
