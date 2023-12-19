@@ -37,44 +37,44 @@ nav.sidebar {
   color: white;
 }
 
-  nav.sidebar h1,
-  nav.sidebar h2,
-  nav.sidebar h3 {
-    margin: 0;
-    padding: 0;
-  }
+nav.sidebar h1,
+nav.sidebar h2,
+nav.sidebar h3 {
+  margin: 0;
+  padding: 0;
+}
 
-  nav.sidebar h1 {
-    font-size: 100%;
-    line-height: 100%;
-  }
+nav.sidebar h1 {
+  font-size: 100%;
+  line-height: 100%;
+}
 
-  nav.sidebar h2 {
-    color: #CC9900;
-    font-size: 100%;
-  }
+nav.sidebar h2 {
+  color: #CC9900;
+  font-size: 100%;
+}
 
-  nav.sidebar ol {
-    list-style-type: upper-roman;
-    margin: 0 0 1.5rem 1.5rem;
-    padding: 0;
-  }
+nav.sidebar ol {
+  list-style-type: upper-roman;
+  margin: 0 0 1.5rem 1.5rem;
+  padding: 0;
+}
 
-  nav.sidebar li {
-    margin: 0;
-    padding: 0;
-  }
+nav.sidebar li {
+  margin: 0;
+  padding: 0;
+}
 
-  nav.sidebar a,
-  nav.sidebar a:visited {
-    color: #FFFFCC;
-  }
+nav.sidebar a,
+nav.sidebar a:visited {
+  color: #FFFFCC;
+}
 
-  div#title {
-    display: grid;
-    grid-template-columns: 40px auto;
-    grid-gap: 0.5rem;
-  }
+div#title {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-gap: 0.5rem;
+}
 
 /* Main area */
 main {
@@ -122,9 +122,4 @@ a:visited {
 nav.toc ul {
   margin: 0.5rem 0 0 1.5rem;
   padding: 0;
-}
-
-/* Code Blocks */
-code {
-  white-space: normal;
 }
